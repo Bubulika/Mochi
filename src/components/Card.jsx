@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 function Card({ data }) {
   return (
     <MainDiv>
@@ -11,6 +12,10 @@ function Card({ data }) {
     </MainDiv>
   );
 }
+
+Card.propTypes = {
+  data: PropTypes.object,
+};
 
 export default Card;
 
@@ -26,25 +31,27 @@ const DetailDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:7px;
+  padding: 7px;
 `;
 const Title = styled.h1`
   font-size: 20px;
   font-weight: bold;
+  font-family: "Sriracha";
 `;
 const Ingredients = styled.h3`
   font-size: 12px;
   font-weight: 700;
-  opacity:0.85;
+  opacity: 0.85;
+  font-family: "Sriracha";
 `;
 const Photo = styled.img`
   width: 120px;
   height: 120px;
   border-radius: 5px;
-  margin:7px;
+  margin: 7px;
 `;
 const Price = styled.h3`
   font-size: 20px;
   font-weight: 700;
-  
+  font-family: "Sriracha";
 `;

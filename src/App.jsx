@@ -6,8 +6,11 @@ import Card from "./components/Card";
 import { MochikoProductGeo, MochikoProductEng } from "./Data";
 import { useState } from "react";
 import Footer from "./components/Footer";
+import ButtonComponent from "./components/ButtonComponent";
+
 function App() {
   const [isEnglish, setIsEnglish] = useState(false);
+  const [isIcecream, setIsIcecream] = useState(true);
   return (
     <>
       <GlobalStyles />
@@ -18,10 +21,27 @@ function App() {
         />
       </Helmet>
       <Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
+      <ButtonComponent
+        isEnglish={isEnglish}
+        isIcecream={isIcecream}
+        setIsIcecream={setIsIcecream}
+      />
       <Div>
         {isEnglish
-          ? MochikoProductEng.map((item) => <Card data={item} />)
-          : MochikoProductGeo.map((item) => <Card data={item} />)}
+          ? isIcecream
+            ? MochikoProductEng.filter((el) => el.isIcecream === true).map(
+                (item) => <Card data={item} key={item.name} />
+              )
+            : MochikoProductEng.filter((el) => el.isIcecream === false).map(
+                (item) => <Card data={item} key={item.name} />
+              )
+          : isIcecream
+          ? MochikoProductGeo.filter((el) => el.isIcecream === true).map(
+              (item) => <Card data={item} key={item.name} />
+            )
+          : MochikoProductGeo.filter((el) => el.isIcecream === false).map(
+              (item) => <Card data={item} key={item.name} />
+            )}
       </Div>
       <Footer isEnglish={isEnglish} />
     </>
@@ -35,5 +55,4 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
 `;
