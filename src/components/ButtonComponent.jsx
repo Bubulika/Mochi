@@ -42,10 +42,10 @@ const ButtonComponent = ({ isEnglish, isIcecream, setIsIcecream }) => {
     <MainDiv>
       <ButtonContainer>
         <Button isIcecream={isIcecream} onClick={() => handleClick("icecream")}>
-          {isEnglish ? "Mochi with ice-cream" : "მოჩი ნაყინის შიგთავსით"}
+          {isEnglish ? "Mochi with ice-cream" : "ნაყინის შიგთავსით"}
         </Button>
         <Button isIcecream={!isIcecream} onClick={() => handleClick("cream")}>
-          {isEnglish ? "Mochi with cream" : "მოჩი კრემის შიგთავსით"}
+          {isEnglish ? "Mochi with cream" : "კრემის შიგთავსით"}
         </Button>
       </ButtonContainer>
     </MainDiv>
