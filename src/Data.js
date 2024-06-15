@@ -242,9 +242,8 @@ export const MochikoProductEng = [
     isIcecream: true,
   },
   {
-    name: "Mochi with black-chocolate",
-    ingredients:
-      "Homemade black-chocolate ice-cream, nuts, glutinous rice dough",
+    name: "Mochi with dark chocolate",
+    ingredients: "dark chocolate, cream cheese, nuts, glutinous rice dough",
     price: "3.5 Gel",
     img: blackChok,
     isIcecream: false,
