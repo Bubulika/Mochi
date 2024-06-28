@@ -3,14 +3,19 @@ import GlobalStyles from "./GlobalStyles";
 import { Helmet } from "react-helmet";
 import Header from "./components/Header";
 import Card from "./components/Card";
-import { MochikoProductGeo, MochikoProductEng } from "./Data";
+import {
+  MochikoProductGeo,
+  MochikoProductEng,
+  iceCreamEng,
+  iceCreamGeo,
+} from "./Data";
 import { useState } from "react";
 import Footer from "./components/Footer";
-import ButtonComponent from "./components/ButtonComponent";
+import IcecreamCard from "./components/IcecreamCard";
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(false);
-  const [isIcecream, setIsIcecream] = useState(true);
+
   return (
     <>
       <GlobalStyles />
@@ -21,27 +26,25 @@ function App() {
         />
       </Helmet>
       <Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-      <ButtonComponent
-        isEnglish={isEnglish}
-        isIcecream={isIcecream}
-        setIsIcecream={setIsIcecream}
-      />
+      <Title>{isEnglish ? "Mochi" : "მოჩი"}</Title>
       <Div>
         {isEnglish
-          ? isIcecream
-            ? MochikoProductEng.filter((el) => el.isIcecream === true).map(
-                (item) => <Card data={item} key={item.name} />
-              )
-            : MochikoProductEng.filter((el) => el.isIcecream === false).map(
-                (item) => <Card data={item} key={item.name} />
-              )
-          : isIcecream
-          ? MochikoProductGeo.filter((el) => el.isIcecream === true).map(
-              (item) => <Card data={item} key={item.name} />
-            )
-          : MochikoProductGeo.filter((el) => el.isIcecream === false).map(
-              (item) => <Card data={item} key={item.name} />
-            )}
+          ? MochikoProductEng.map((item) => (
+              <Card data={item} key={item.name} />
+            ))
+          : MochikoProductGeo.map((item) => (
+              <Card data={item} key={item.name} />
+            ))}
+      </Div>
+      <Title>{isEnglish ? "Ice-cream" : "ნაყინი"}</Title>
+      <Div>
+        {isEnglish
+          ? iceCreamEng.map((item) => (
+              <IcecreamCard data={item} key={item.name} />
+            ))
+          : iceCreamGeo.map((item) => (
+              <IcecreamCard data={item} key={item.name} />
+            ))}
       </Div>
       <Footer isEnglish={isEnglish} />
     </>
@@ -55,4 +58,12 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+`;
+
+const Title = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  font-family: "Sriracha";
 `;
