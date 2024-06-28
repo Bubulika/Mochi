@@ -17,28 +17,28 @@ import vanilisnayini from "./assets/vanilisnayini.jpeg";
 export const MochikoProductGeo = [
   {
     name: "ფსტის ნაყინის მოჩი",
-    ingredients: "ფსტის ნაყინი, წებოვანი ბრინჟის ცომი.",
+    ingredients: "ფსტის ნაყინი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: pista,
     isIcecream: true,
   },
   {
     name: "მანგოს ნაყინის მოჩი",
-    ingredients: "მანგოს ნაყინი, წებოვანი ბრინჟის ცომი.",
+    ingredients: "მანგოს ნაყინი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: orange,
     isIcecream: true,
   },
   {
     name: "მარწყვის ნაყინის მოჩი",
-    ingredients: "მარწყვის ნაყინი, წებოვანი ბრინჟის ცომი.",
+    ingredients: "მარწყვის ნაყინი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: alubali,
     isIcecream: true,
   },
   {
     name: "მოცვის ნაყინის მოჩი",
-    ingredients: "მოცვის ნაყინი, წებოვანი ბრინჟის ცომი.",
+    ingredients: "მოცვის ნაყინი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: mocvi,
     isIcecream: true,
@@ -46,14 +46,14 @@ export const MochikoProductGeo = [
 
   {
     name: "ალუბლის ნაყინის მოჩი",
-    ingredients: "ალუბლის ნაყინი, წებოვანი ბრინჟის ცომი.",
+    ingredients: "ალუბლის ნაყინი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: alubali,
     isIcecream: true,
   },
   {
     name: "მოჩი ტირამისუ",
-    ingredients: "ტირამისუს ნაყინი, წებოვანი ბრინჟის ცომი.",
+    ingredients: "ტირამისუს ნაყინი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: caramel,
     isIcecream: true,
@@ -61,7 +61,7 @@ export const MochikoProductGeo = [
 
   {
     name: "მოჩი რაფაელო",
-    ingredients: "მოხარშული კრემი, ნუში, ქოქოსი, წებოვანი ბრინჟის ცომი.",
+    ingredients: "მოხარშული კრემი, ნუში, ქოქოსი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: raffaelo,
     isIcecream: false,
@@ -69,7 +69,7 @@ export const MochikoProductGeo = [
 
   {
     name: "მოჩი ორეო",
-    ingredients: "ვანილის ნაყინი, ორეო, წებოვანი ბრინჟის ცომი.",
+    ingredients: "ვანილის ნაყინი, ორეო, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: oreo,
     isIcecream: true,
@@ -78,7 +78,7 @@ export const MochikoProductGeo = [
   {
     name: "ფსტის მოჩი კენკრის მიქსით",
     ingredients:
-      "ფსტის პასტა, კრემყველი, ალუბლის კონფი, წებოვანი ბრინჟის ცომი.",
+      "ფსტის პასტა, კრემყველი, ალუბლის კონფი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: fstalubali,
     isIcecream: false,
@@ -86,7 +86,7 @@ export const MochikoProductGeo = [
   {
     name: "მოჩი შოკოლადით და ალუბლით",
     ingredients:
-      "შავი შოკოლადი, კრემყველი, ალუბლის კონფი, წებოვანი ბრინჟის ცომი.",
+      "შავი შოკოლადი, კრემყველი, ალუბლის კონფი, წებოვანი ბრინჯის ცომი.",
     price: "5.00 ₾",
     img: shavishokoladialu,
     isIcecream: false,
