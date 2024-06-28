@@ -26,7 +26,7 @@ function App() {
         />
       </Helmet>
       <Header isEnglish={isEnglish} setIsEnglish={setIsEnglish} />
-      <Title>{isEnglish ? "Mochi" : "მოჩი"}</Title>
+
       <Div>
         {isEnglish
           ? MochikoProductEng.map((item) => (
