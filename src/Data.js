@@ -175,7 +175,7 @@ export const iceCreamEng = [
   {
     img: oreosnayini,
     name: "Oreo ice-cream",
-    price: "7.00 Gel",
+    price: "8.00 Gel",
   },
   {
     img: marwyvisnayini,
@@ -195,14 +195,14 @@ export const iceCreamEng = [
   {
     img: fistasnayini,
     name: "Pistachio ice-cream",
-    price: "7.00 Gel",
+    price: "8.00 Gel",
   },
 ];
 export const iceCreamGeo = [
   {
     img: oreosnayini,
     name: "ორეოს ნაყინი",
-    price: "7.00 ₾",
+    price: "8.00 ₾",
   },
   {
     img: marwyvisnayini,
@@ -222,6 +222,6 @@ export const iceCreamGeo = [
   {
     img: fistasnayini,
     name: "ფსტის ნაყინი",
-    price: "7.00 ₾",
+    price: "8.00 ₾",
   },
 ];
